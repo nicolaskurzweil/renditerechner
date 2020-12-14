@@ -1,0 +1,108 @@
+:root {
+  --primaryColor: #ff0266;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.App {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  color: white;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.MainDiv {
+  padding: 80px;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.Slider {
+  width: calc(100vw - 160px);
+}
+
+.SliderWrapper {
+  padding-bottom: 40px;
+}
+
+.SliderLabel {
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  //background-color: #6f9dfa;
+  background-color: #282c34;
+  min-height: 80px;
+  max-height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(20px + 2vmin);
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.OutputLabel {
+  margin-top: 0;
+  margin-bottom: 5;
+}
+
+.OutputValue {
+  margin-top: 0;
+  margin-bottom: 20;
+  font-size: 30px;
+  color: var(--primaryColor);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .MainDiv {
+    padding: 40px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Slider {
+    width: calc(100vw - 80px);
+  }
+}
